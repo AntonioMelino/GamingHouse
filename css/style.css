@@ -12,6 +12,8 @@ nav div div ul li a{
     animation-iteration-count: infinite;
 }
 
+/* ANIMACIÓN DEL LOGOTIPO */
+
 @keyframes aparecer{
     0%{
         opacity: 0;
@@ -42,6 +44,14 @@ h1{
     background-color: white;
 }
 
+/* MEDIA QUERYS TITULOS */
+
+@media only screen and (max-width: 768px){
+    h1{
+        font-size: 300%;
+    }
+}
+
 .mediosDePagoIndex {
     margin-top: 1%;
     background-color: white;
@@ -67,3 +77,14 @@ h1{
             color: black;
             font-weight: lighter;
         }
+
+    .containerFormulario{
+        background-color: white;
+    }
+
+    .containerTablaJuego{
+        border: solid 1px black;
+        background-color: white;
+        padding-left: 10% !important;
+        padding-right: 10% !important;
+    }
