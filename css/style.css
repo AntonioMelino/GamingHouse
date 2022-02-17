@@ -6,11 +6,17 @@ nav div div ul li a{
     color: black !important;
 }
 
+/* NAVEGADOR */
+
 .navbar-brand{
     animation-duration: 2s;
     animation-name: aparecer;
     animation-iteration-count: infinite;
 }
+  
+  a:hover {
+    background-color: gold;
+  }
 
 /* ANIMACIÓN DEL LOGOTIPO */
 
@@ -22,6 +28,29 @@ nav div div ul li a{
         opacity: 1;
     }
 }
+
+/* ANIMACION DEL TITULO */
+
+.tituloIndex{
+    animation-duration: 2s;
+    animation-direction: normal;
+    animation-iteration-count: initial;
+    animation-name: aparecer2;
+}
+
+@keyframes aparecer2{
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+/* BACKGROUND */
 
 .bodyPaginas {
     background-image: url(../images/fondo2.jpg);
@@ -49,6 +78,26 @@ h1{
 @media only screen and (max-width: 768px){
     h1{
         font-size: 300%;
+    }
+}
+
+.containerCarruselIndex{
+    margin-top: 1%;
+}
+
+.containerCardsIndex{
+    margin-top: 1%;
+}
+
+.card{
+    border: solid 1px black;
+}
+
+/* MEDIA QUERYS CARDS */
+
+@media only screen and (max-width: 768px){
+    .containerCardsIndex{
+        margin-left: 18%;
     }
 }
 
@@ -85,6 +134,6 @@ h1{
     .containerTablaJuego{
         border: solid 1px black;
         background-color: white;
-        padding-left: 10% !important;
-        padding-right: 10% !important;
     }
+
+    /* MEDIA QUERYS CONTACTENOS */
