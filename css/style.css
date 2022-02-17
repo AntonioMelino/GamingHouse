@@ -53,7 +53,7 @@ nav div div ul li a{
 /* BACKGROUND */
 
 .bodyPaginas {
-    background-image: url(../images/fondo2.jpg);
+    background-color: black;
 }
 
 .margenes{
@@ -137,3 +137,19 @@ h1{
     }
 
     /* MEDIA QUERYS CONTACTENOS */
+
+    @media only screen and (max-width: 768px){
+    .containerFormularioContactenos input{
+        width: 100%;
+    }
+    textarea{
+        width: 100%;
+    }
+    }
+
+    /* MEDIA QUERYS MI CUENTA */
+    @media only screen and (max-width: 768px){
+    .containerFormularioMiCuenta input{
+        width: 100%;
+    }
+    }
