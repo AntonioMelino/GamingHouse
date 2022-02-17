@@ -31,7 +31,7 @@ nav div div ul li a{
 
 /* ANIMACION DEL TITULO */
 
-.tituloIndex{
+.tituloAnimacion{
     animation-duration: 2s;
     animation-direction: normal;
     animation-iteration-count: initial;
@@ -132,7 +132,6 @@ h1{
     }
 
     .containerTablaJuego{
-        border: solid 1px black;
         background-color: white;
     }
 
