@@ -1,154 +1,120 @@
-nav div div{
-    padding-left: 30%;
-}
+@charset "UTF-8";
+nav div div {
+  padding-left: 30%; }
 
-nav div div ul li a{
-    color: black !important;
-}
+nav div div ul li a {
+  color: black !important; }
 
 /* NAVEGADOR */
+.navbar-brand {
+  animation-duration: 2s;
+  animation-name: aparecer;
+  animation-iteration-count: infinite; }
 
-.navbar-brand{
-    animation-duration: 2s;
-    animation-name: aparecer;
-    animation-iteration-count: infinite;
-}
-  
-  a:hover {
-    background-color: gold;
-  }
+a:hover {
+  background-color: gold; }
 
 /* ANIMACIÓN DEL LOGOTIPO */
-
-@keyframes aparecer{
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-}
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
 /* ANIMACION DEL TITULO */
+.tituloAnimacion {
+  animation-duration: 2s;
+  animation-direction: normal;
+  animation-iteration-count: initial;
+  animation-name: aparecer2; }
 
-.tituloAnimacion{
-    animation-duration: 2s;
-    animation-direction: normal;
-    animation-iteration-count: initial;
-    animation-name: aparecer2;
-}
-
-@keyframes aparecer2{
-    from {
-      margin-left: 100%;
-      width: 300%
-    }
-  
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
-  }
-
-/* BACKGROUND */
+@keyframes aparecer2 {
+  from {
+    margin-left: 100%;
+    width: 300%; }
+  to {
+    margin-left: 0%;
+    width: 100%; } }
 
 .bodyPaginas {
-    background-color: black;
-}
+  background-color: black; }
 
-.margenes{
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 1%;
-    background-color: white;
-    border: 60% solid black;
-}
-h1{
-    display: flex;
-    font-size: 500%;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    background-color: white;
-}
+.margenes {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 1%;
+  background-color: white;
+  border: 60% solid black; }
+
+h1 {
+  display: flex;
+  font-size: 500%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  background-color: white; }
 
 /* MEDIA QUERYS TITULOS */
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 300%; } }
 
-@media only screen and (max-width: 768px){
-    h1{
-        font-size: 300%;
-    }
-}
+.containerCarruselIndex {
+  margin-top: 1%; }
 
-.containerCarruselIndex{
-    margin-top: 1%;
-}
+.containerCardsIndex {
+  margin-top: 1%; }
 
-.containerCardsIndex{
-    margin-top: 1%;
-}
-
-.card{
-    border: solid 1px black;
-}
+.card {
+  border: solid 1px black; }
 
 /* MEDIA QUERYS CARDS */
-
-@media only screen and (max-width: 768px){
-    .containerCardsIndex{
-        margin-left: 18%;
-    }
-}
+@media only screen and (max-width: 768px) {
+  .containerCardsIndex {
+    margin-left: 18%; } }
 
 .mediosDePagoIndex {
-    margin-top: 1%;
-    background-color: white;
-    border: solid 1px black;}
-    .mediosDePagoIndex a {
-        margin-right: 5px;
-        margin-left: 5px;
-        text-decoration: none;
-        color: black;
-        font-weight: lighter;
-    }
-    .redesSocialesIndex {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: flex-end;
-        background-color: white;
-        border: solid 1px black;}
-        .redesSocialesIndex a {
-            margin-right: 5px;
-            margin-left: 5px;
-            text-decoration: none;
-            color: black;
-            font-weight: lighter;
-        }
+  margin-top: 1%;
+  background-color: white;
+  border: solid 1px black; }
 
-    .containerFormulario{
-        background-color: white;
-    }
+.mediosDePagoIndex a {
+  margin-right: 5px;
+  margin-left: 5px;
+  text-decoration: none;
+  color: black;
+  font-weight: lighter; }
 
-    .containerTablaJuego{
-        background-color: white;
-    }
+.redesSocialesIndex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: white;
+  border: solid 1px black; }
 
-    /* MEDIA QUERYS CONTACTENOS */
+.redesSocialesIndex a {
+  margin-right: 5px;
+  margin-left: 5px;
+  text-decoration: none;
+  color: black;
+  font-weight: lighter; }
 
-    @media only screen and (max-width: 768px){
-    .containerFormularioContactenos input{
-        width: 100%;
-    }
-    textarea{
-        width: 100%;
-    }
-    }
+.containerFormulario {
+  background-color: white; }
 
-    /* MEDIA QUERYS MI CUENTA */
-    @media only screen and (max-width: 768px){
-    .containerFormularioMiCuenta input{
-        width: 100%;
-    }
-    }
+.containerTablaJuego {
+  background-color: white; }
+
+/* MEDIA QUERYS CONTACTENOS */
+@media only screen and (max-width: 768px) {
+  .containerFormularioContactenos input {
+    width: 100%; }
+  textarea {
+    width: 100%; } }
+
+/* MEDIA QUERYS MI CUENTA */
+@media only screen and (max-width: 768px) {
+  .containerFormularioMiCuenta input {
+    width: 100%; } }
