@@ -1,3 +1,7 @@
+/* MAPS - VARIABLES */
+
+$colores: ("negro": #000000, "oro": #ffc004, "blanco": #ffffff);
+
 nav{
     div{
         div{
@@ -29,7 +33,7 @@ nav{
 }
 
 a:hover {
-    background-color: gold;
+    background-color: map-get($colores, oro );
   }
 
   /* ANIMACIÓN DEL LOGOTIPO */
@@ -65,14 +69,15 @@ a:hover {
   }
 
   .bodyPaginas {
-    background-color: black;
+    /*background-color: black;*/
+    background-color: map-get($colores, negro );
 }
 
 .margenes{
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 1%;
-    background-color: white;
+    background-color: map-get($colores, blanco );
     border: 60% solid black;
 }
 h1{
@@ -82,7 +87,7 @@ h1{
     align-items: center;
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    background-color: white;
+    background-color: map-get($colores, blanco );
 }
 
 /* MEDIA QUERYS TITULOS */
@@ -115,7 +120,7 @@ h1{
 
 .mediosDePagoIndex {
     margin-top: 1%;
-    background-color: white;
+    background-color: map-get($colores, blanco );
     border: solid 1px black;}
     .mediosDePagoIndex a {
         margin-right: 5px;
@@ -129,7 +134,7 @@ h1{
         flex-direction: row;
         align-items: center;
         justify-content: flex-end;
-        background-color: white;
+        background-color: map-get($colores, blanco );
         border: solid 1px black;}
         .redesSocialesIndex a {
             margin-right: 5px;
@@ -144,7 +149,9 @@ h1{
     }
 
     .containerTablaJuego{
-        background-color: white;
+        /* EXTEND */
+        font-weight: 100;
+        @extend .containerFormulario;
     }
 
     /* MEDIA QUERYS CONTACTENOS */
@@ -163,4 +170,14 @@ h1{
         .containerFormularioMiCuenta input{
             width: 100%;
         }
+        }
+
+        /* MIXIN */
+
+        @mixin negrita {
+            font-weight: bolder;
+        }
+
+        .mediosDePagoIndex{
+            @include negrita;
         }
