@@ -62,6 +62,10 @@ h1 {
   h1 {
     font-size: 300%; } }
 
+@media only screen and (max-width: 460px) {
+  h1 {
+    font-size: 250%; } }
+
 .containerCarruselIndex {
   margin-top: 1%; }
 
@@ -74,7 +78,11 @@ h1 {
 /* MEDIA QUERYS CARDS */
 @media only screen and (max-width: 768px) {
   .containerCardsIndex {
-    margin-left: 18%; } }
+    margin-left: 15%; } }
+
+@media only screen and (max-width: 480px) {
+  .containerCardsIndex {
+    margin-left: 8%; } }
 
 .mediosDePagoIndex {
   margin-top: 1%;
