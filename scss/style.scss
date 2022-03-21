@@ -179,7 +179,13 @@ h1{
 
 @media only screen and (max-width: 480px){
     .containerCardsIndex{
-        margin-left: 8%;
+        margin-left: 11%;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    .containerCardsIndex{
+        margin-left: 2%;
     }
 }
 
@@ -216,6 +222,7 @@ h1{
     }
     
     /* MEDIA QUERYS FOOTER */
+
 
 
     /* FORMULARIO MI CUENTA */
