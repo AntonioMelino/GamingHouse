@@ -30,6 +30,11 @@ nav{
     animation-duration: 2s;
     animation-name: aparecer;
     animation-iteration-count: infinite;
+    color: map-get($colores , blanco ) !important;
+}
+
+.nav-link{
+    color: map-get($colores , blanco ) !important;
 }
 
 a:hover {
@@ -69,7 +74,6 @@ a:hover {
   }
 
   .bodyPaginas {
-    /*background-color: black;*/
     background-color: map-get($colores, negro );
 }
 
@@ -77,9 +81,19 @@ a:hover {
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 1%;
-    background-color: map-get($colores, blanco );
+    background-color: map-get($colores , negro );
+    color: map-get($colores , blanco );
     border: 60% solid black;
 }
+
+.h2Paginas{
+    margin: 2%;
+}
+
+.h4Paginas{
+    margin: 2%;
+}
+
 h1{
     display: flex;
     font-size: 500%;
@@ -87,7 +101,22 @@ h1{
     align-items: center;
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    background-color: map-get($colores, blanco );
+    background-color: map-get($colores, negro );
+    color: map-get($colores, blanco );
+}
+
+/* CONTÁCTENOS */
+
+.formularioContactenos{
+   margin: 1%;
+   font-size: 250%;
+}
+
+/* MI CUENTA */
+
+.formularioMiCuenta{
+    margin: 1%;
+   font-size: 250%;
 }
 
 /* MEDIA QUERYS TITULOS */
@@ -103,6 +132,30 @@ h1{
         font-size: 250%;
     }
 }    
+
+/* MEDIA QUERYS MARGENES */
+
+@media only screen and (max-width: 768px){
+    .margenes{
+        margin-left: 1%;
+        margin-right: 1%;
+        margin-top: 1%;
+        background-color: map-get($colores , negro );
+        color: map-get($colores , blanco );
+        border: 60% solid black;
+    }
+}
+
+@media only screen and (max-width: 460px){
+    .margenes{
+        margin-left: 1%;
+        margin-right: 1%;
+        margin-top: 1%;
+        background-color: map-get($colores , negro );
+        color: map-get($colores , blanco );
+        border: 60% solid black;
+    }
+}
 
 .containerCarruselIndex{
     margin-top: 1%;
@@ -130,15 +183,17 @@ h1{
     }
 }
 
+/* FOOTER */
+
 .mediosDePagoIndex {
     margin-top: 1%;
-    background-color: map-get($colores, blanco );
+    background-color: map-get($colores, negro );
     border: solid 1px black;}
     .mediosDePagoIndex a {
         margin-right: 5px;
         margin-left: 5px;
         text-decoration: none;
-        color: black;
+        color: map-get($colores , blanco );
         font-weight: lighter;
     }
     .redesSocialesIndex {
@@ -146,30 +201,52 @@ h1{
         flex-direction: row;
         align-items: center;
         justify-content: flex-end;
-        background-color: map-get($colores, blanco );
+        background-color: map-get($colores, negro );
         border: solid 1px black;}
         .redesSocialesIndex a {
             margin-right: 5px;
             margin-left: 5px;
             text-decoration: none;
-            color: black;
+            color: map-get($colores , blanco );
             font-weight: lighter;
         }
 
-    .containerFormulario{
-        background-color: white;
+    h4{
+        color: map-get($colores , blanco );
     }
+    
+    /* MEDIA QUERYS FOOTER */
+
+
+    /* FORMULARIO MI CUENTA */
+    
+    .containerFormulario{
+        color: map-get($colores , blanco );
+        background-color: map-get($colores , negro );
+    }
+
+    .accordion-item{
+        background-color: map-get($colores , negro );
+        color: map-get($colores , blanco );
+    }
+
+    /* TABLAS RECIENTEMENTE LANZADOS */
 
     .containerTablaJuego{
         /* EXTEND */
         font-weight: 100;
+        margin: 2%;
         @extend .containerFormulario;
+    }
+
+    .table{
+        color: map-get($colores , blanco );
     }
 
     /* MEDIA QUERYS CONTACTENOS */
 
     @media only screen and (max-width: 768px){
-        .containerFormularioContactenos input{
+        .formularioContactenos input{
             width: 100%;
         }
         textarea{
@@ -179,7 +256,7 @@ h1{
     
         /* MEDIA QUERYS MI CUENTA */
         @media only screen and (max-width: 768px){
-        .containerFormularioMiCuenta input{
+        .formularioMiCuenta input{
             width: 100%;
         }
         }
@@ -192,4 +269,13 @@ h1{
 
         .mediosDePagoIndex{
             @include negrita;
+        }
+
+        /* MEDIA QUERYS RECIENTEMENTE LANZADOS */
+
+        @media only screen and (max-width: 768px){
+            img{
+                width: 60%;
+                height: 60%;
+            }
         }

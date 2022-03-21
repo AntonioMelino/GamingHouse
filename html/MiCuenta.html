@@ -27,7 +27,7 @@
 
 <body class="bodyPaginas">
   <!-- Navegador -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-black">
     <div class="container-fluid">
       <a class="navbar-brand" href="../index.html">Gaming House™</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -66,149 +66,148 @@
     <p>
 
       <!--FORMULARIO CON DATOS PARA INICIAR SESIÓN-->
-    <div class="containerFormularioMiCuenta">
-      <form>
-        <font size="8">
-          <label for="Usuario:">Usuario:</label>
-          <input type="account" placeholder="Ingrese su usuario" id="Usuario:">
-          <br><br>
-          <label for="E-mail:">E-mail:</label>
-          <input type="email" placeholder="Ingrese su email" id="E-mail:">
-          <br><br>
-          <label for="Contraseña:">Contraseña:</label>
-          <input type="password" placeholder="Ingrese su contraseña" id="Contraseña:">
-          <br><br>
-          Ingrese con <a href="https://myaccount.google.com/?utm_source=sign_in_no_continueS">Google</a>
-          <br><br>
-          Ingrese con <a href="https://es-la.facebook.com/login/device-based/regular/login/">Facebook</a>
-        </font>
-        </p>
+    <form>
+
+      <div class="formularioMiCuenta">
+        <label for="Usuario">Usuario:</label>
+        <input type="text" id="Usuario" placeholder="Usuario">
+      </div>
+      <div class="formularioMiCuenta">
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" placeholder="Ingrese su E-mail">
+      </div>
+      <div class="formularioMiCuenta">
+      <label for="Contraseña:">Contraseña:</label>
+      <input type="password" placeholder="Ingrese su contraseña" id="Contraseña:">
     </div>
-  </div>
-
-  <h1>Si no tiene una cuenta cree una</h1>
-
-  <!-- FORMULARIO PARA CREAR CUENTA -->
-
-  <div class="containerFormulario">
-    <form class="row g-3 needs-validation" novalidate>
-      <div class="col-md-4">
-        <label for="validationCustom01" class="form-label">Apellido</label>
-        <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
-        <div class="valid-feedback">
-          Looks good!
-        </div>
-      </div>
-      <div class="col-md-4">
-        <label for="validationCustom02" class="form-label">Nombre</label>
-        <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
-        <div class="valid-feedback">
-          Looks good!
-        </div>
-      </div>
-      <div class="col-md-4">
-        <label for="validationCustomUsername" class="form-label">Nombre de usuario</label>
-        <div class="input-group has-validation">
-          <span class="input-group-text" id="inputGroupPrepend">@</span>
-          <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend"
-            required>
-          <div class="invalid-feedback">
-            Please choose a username.
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <label for="validationCustom03" class="form-label">Ciudad</label>
-        <input type="text" class="form-control" id="validationCustom03" required>
-        <div class="invalid-feedback">
-          Please provide a valid city.
-        </div>
-      </div>
-      <div class="col-md-3">
-        <label for="validationCustom04" class="form-label">Provincia</label>
-        <select class="form-select" id="validationCustom04" required>
-          <option selected disabled value="">Elija una opción</option>
-          <option>Buenos aires</option>
-          <option>Capital Federal</option>
-          <option>Catamarca</option>
-          <option>Chaco</option>
-          <option>Chubut</option>
-          <option>Córdoba</option>
-          <option>Corrientes</option>
-          <option>Entre Ríos</option>
-          <option>Formosa</option>
-          <option>Jujuy</option>
-          <option>La Pampa</option>
-          <option>La Rioja</option>
-          <option>Mendoza</option>
-          <option>Misiones</option>
-          <option>Neuquén</option>
-          <option>Rio Negro</option>
-          <option>Salta</option>
-          <option>San Juan</option>
-          <option>San Luis</option>
-          <option>Santa Cruz</option>
-          <option>Santa Fe</option>
-          <option>Santiago del Estero</option>
-          <option>Tierra del Fuego</option>
-          <option>Tucumán</option>
-        </select>
-        <div class="invalid-feedback">
-          Please select a valid state.
-        </div>
-      </div>
-      <div class="col-md-3">
-        <label for="validationCustom05" class="form-label">Código postal</label>
-        <input type="text" class="form-control" id="validationCustom05" required>
-        <div class="invalid-feedback">
-          Please provide a valid zip.
-        </div>
-      </div>
-      <div class="col-12">
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-          <label class="form-check-label" for="invalidCheck">
-            Estoy de acuerdo con los términos y condiciones.
-          </label>
-          <div class="invalid-feedback">
-            You must agree before submitting.
-          </div>
-        </div>
-      </div>
-      <div class="col-12">
-        <button class="btn btn-primary" type="submit">Enviar solicitud</button>
+      <div class="formularioMiCuenta">
+        <button type="submit">Entrar</button>
       </div>
     </form>
-  </div>
+   
+    <h1>Si no tiene una cuenta cree una</h1>
 
-  <!--FOOTER MEDIOS DE PAGO-->
-  <footer class="mediosDePagoIndex">
-    <h4>Nuestros medios de pago: </h4>
-    <a href="#"><i class="bi bi-credit-card"></i>Visa</a>
-    <a href="#"><i class="bi bi-credit-card-fill"></i>MasterCard</a>
-    <a href="#"><i class="bi bi-paypal"></i>Paypal</a>
-    <a href="#"><i class="bi bi-credit-card-2-back-fill"></i>AmericanExpress</a>
-    <a href="#"><i class="bi bi-cash"></i>Efectivo</a>
-    <a href="#"><i class="bi bi-bank"></i>Transferencia bancaria</a>
-  </footer>
+    <!-- FORMULARIO PARA CREAR CUENTA -->
 
-  <!--FOOTER REDES SOCIALES-->
-  <footer class="redesSocialesIndex">
-    <h4>Seguinos en nuestras redes sociales: </h4>
-    <ul>
-      <a href="https://twitter.com/?logout=1643804277407"><i class="bi bi-twitter"></i></a>
-      <a href="https://es-la.facebook.com/login/device-based/regular/login/"><i class="bi bi-facebook"></i></a>
-      <a href="https://www.instagram.com/accounts/login/"><i class="bi bi-instagram"></i></a>
-      <a href="https://www.linkedin.com/login/es?fromSignIn=true&trk=guest_homepage-basic_nav-header-signin"><i
-          class="bi bi-linkedin"></i></a>
-    </ul>
-  </footer>
+    <div class="containerFormulario">
+      <form class="row g-3 needs-validation" novalidate>
+        <div class="col-md-4">
+          <label for="validationCustom01" class="form-label">Apellido</label>
+          <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustom02" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustomUsername" class="form-label">Nombre de usuario</label>
+          <div class="input-group has-validation">
+            <span class="input-group-text" id="inputGroupPrepend">@</span>
+            <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend"
+              required>
+            <div class="invalid-feedback">
+              Please choose a username.
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <label for="validationCustom03" class="form-label">Ciudad</label>
+          <input type="text" class="form-control" id="validationCustom03" required>
+          <div class="invalid-feedback">
+            Please provide a valid city.
+          </div>
+        </div>
+        <div class="col-md-3">
+          <label for="validationCustom04" class="form-label">Provincia</label>
+          <select class="form-select" id="validationCustom04" required>
+            <option selected disabled value="">Elija una opción</option>
+            <option>Buenos aires</option>
+            <option>Capital Federal</option>
+            <option>Catamarca</option>
+            <option>Chaco</option>
+            <option>Chubut</option>
+            <option>Córdoba</option>
+            <option>Corrientes</option>
+            <option>Entre Ríos</option>
+            <option>Formosa</option>
+            <option>Jujuy</option>
+            <option>La Pampa</option>
+            <option>La Rioja</option>
+            <option>Mendoza</option>
+            <option>Misiones</option>
+            <option>Neuquén</option>
+            <option>Rio Negro</option>
+            <option>Salta</option>
+            <option>San Juan</option>
+            <option>San Luis</option>
+            <option>Santa Cruz</option>
+            <option>Santa Fe</option>
+            <option>Santiago del Estero</option>
+            <option>Tierra del Fuego</option>
+            <option>Tucumán</option>
+          </select>
+          <div class="invalid-feedback">
+            Please select a valid state.
+          </div>
+        </div>
+        <div class="col-md-3">
+          <label for="validationCustom05" class="form-label">Código postal</label>
+          <input type="text" class="form-control" id="validationCustom05" required>
+          <div class="invalid-feedback">
+            Please provide a valid zip.
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            <label class="form-check-label" for="invalidCheck">
+              Estoy de acuerdo con los términos y condiciones.
+            </label>
+            <div class="invalid-feedback">
+              You must agree before submitting.
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">Enviar solicitud</button>
+        </div>
+      </form>
+    </div>
+
+    <!--FOOTER MEDIOS DE PAGO-->
+    <footer class="mediosDePagoIndex">
+      <h4>Nuestros medios de pago: </h4>
+      <a href="#"><i class="bi bi-credit-card"></i>Visa</a>
+      <a href="#"><i class="bi bi-credit-card-fill"></i>MasterCard</a>
+      <a href="#"><i class="bi bi-paypal"></i>Paypal</a>
+      <a href="#"><i class="bi bi-credit-card-2-back-fill"></i>AmericanExpress</a>
+      <a href="#"><i class="bi bi-cash"></i>Efectivo</a>
+      <a href="#"><i class="bi bi-bank"></i>Transferencia bancaria</a>
+    </footer>
+
+    <!--FOOTER REDES SOCIALES-->
+    <footer class="redesSocialesIndex">
+      <h4>Seguinos en nuestras redes sociales: </h4>
+      <ul>
+        <a href="https://twitter.com/?logout=1643804277407"><i class="bi bi-twitter"></i></a>
+        <a href="https://es-la.facebook.com/login/device-based/regular/login/"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/accounts/login/"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/login/es?fromSignIn=true&trk=guest_homepage-basic_nav-header-signin"><i
+            class="bi bi-linkedin"></i></a>
+      </ul>
+    </footer>
 
 
-  <!-- Js Bootstrap -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
+    <!-- Js Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"></script>
 
 </body>
 

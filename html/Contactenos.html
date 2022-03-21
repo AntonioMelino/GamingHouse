@@ -26,7 +26,7 @@
 
 <body class="bodyPaginas">
     <!-- Navegador -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-black">
         <div class="container-fluid">
             <a class="navbar-brand" href="../index.html">Gaming House™</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -61,30 +61,38 @@
     <!--FORMULARIO DE CONTACTO-->
     <div class="margenes">
         <h1 class="tituloAnimacion">Contáctenos</h1>
-        <div class="containerFormularioContactenos">
-            <form>
-                <fieldset>
-                    <font size="8">
-                        <legend>Formulario de contacto</legend>
-                        <br>
-                        <label for="Usuario:">Usuario:</label>
-                        <input type="text" placeholder="Ingrese su usuario" id="Usuario:">
-                        <br><br>
-                        <label for="E-mail:">E-mail:</label>
-                        <input type="email" placeholder="Ingrese su email" id="E-mail:">
-                        <br><br>
-                        <label for="Contraseña:">Contraseña:</label>
-                        <input type="password" placeholder="Ingrese su contraseña" id="Contraseña:">
-                        <br><br>
-                        <textarea name="" id="" cols="60" rows="10" placeholder="Escriba aquí su duda..."></textarea>
-                        <br><br>
-                        <input type="submit">
-                        <input type="reset">
-                    </font>
-                </fieldset>
-            </form>
+        <form>
+            
+            <div class="formularioContactenos">
+              <label for="Usuario">Usuario:</label>
+              <input type="text" id="Usuario" placeholder="Usuario">
+            </div>
+            <div class="formularioContactenos">
+              <label for="email">Correo electrónico:</label>
+              <input type="email" id="email" placeholder="Ingrese su E-mail">
+            </div>
+            <div class="formularioContactenos">
+              <label for="department-selection">Área a contactar:</label>
+              <select id="department-selection" name="concerned_department">
+                  <option value="">Selecciona un área</option>
+                  <option value="billing">Facturación</option>
+                  <option value="marketing">Marketing</option>
+                  <option value="technical support">Servicio al cliente</option>
+              </select>
+            </div>
+            <div class="formularioContactenos">
+              <label for="title">Motivo de contacto:</label>
+              <input type="text" id="title" placeholder="Problema/Consulta">
+            </div>
+            <div class="formularioContactenos">
+              <label for="message">Solicitud:</label>
+              <textarea id="message" name="visitor_message" placeholder="Escribe tu mensaje aquí."></textarea>
+            </div>
+            <div class="formularioContactenos">
+            <button type="submit">Enviar mensaje</button>
         </div>
-    </div>
+          </form>
+
     <!--FOOTER MEDIOS DE PAGO-->
     <footer class="mediosDePagoIndex">
         <h4>Nuestros medios de pago: </h4>
