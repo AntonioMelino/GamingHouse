@@ -1,4 +1,6 @@
 @charset "UTF-8";
+/* TIPOGRAFÍA IMPORTADA */
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 /* MAPS - VARIABLES */
 nav div div {
   padding-left: 30%; }
@@ -64,19 +66,38 @@ h1 {
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Oswald', sans-serif;
   background-color: #000000;
   color: #ffffff; }
+
+/* MENÚ */
+.bodyMenu {
+  margin-bottom: 5%; }
+
+/* QUIÉNES SOMOS */
+.bodyQuienesSomos {
+  margin-bottom: 25%; }
 
 /* CONTÁCTENOS */
 .formularioContactenos {
   margin: 1%;
   font-size: 250%; }
 
+.bodyContactenos {
+  margin-bottom: 8%; }
+
 /* MI CUENTA */
 .formularioMiCuenta {
   margin: 1%;
   font-size: 250%; }
+
+.bodyMiCuenta {
+  margin-bottom: 17%; }
+
+.bodyMiCuenta p {
+  margin-top: 5%; }
+  .bodyMiCuenta p a:link, .bodyMiCuenta p a:visited, .bodyMiCuenta p a:active {
+    text-decoration: none; }
 
 /* MEDIA QUERYS TITULOS */
 @media only screen and (max-width: 768px) {
@@ -108,6 +129,8 @@ h1 {
 
 .containerCarruselIndex {
   margin-top: 1%; }
+  .containerCarruselIndex a:link, .containerCarruselIndex a:visited, .containerCarruselIndex a:active {
+    text-decoration: none; }
 
 .containerCardsIndex {
   margin-top: 1%; }
@@ -130,6 +153,7 @@ h1 {
 
 /* FOOTER */
 .mediosDePagoIndex {
+  font-family: 'Oswald', sans-serif;
   margin-top: 1%;
   background-color: #000000;
   border: solid 1px black; }
@@ -142,6 +166,7 @@ h1 {
   font-weight: lighter; }
 
 .redesSocialesIndex {
+  font-family: 'Oswald', sans-serif;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -159,7 +184,10 @@ h1 {
 h4 {
   color: #ffffff; }
 
-/* MEDIA QUERYS FOOTER */
+/* FORMULARIO MI CUENTA */
+.bodyFormularioMiCuenta {
+  margin-bottom: 27%; }
+
 /* FORMULARIO MI CUENTA */
 .containerFormulario, .containerTablaJuego {
   color: #ffffff;
@@ -183,12 +211,16 @@ h4 {
   .formularioContactenos input {
     width: 100%; }
   textarea {
-    width: 100%; } }
+    width: 100%; }
+  .formularioContactenos {
+    font-size: 120%; } }
 
 /* MEDIA QUERYS MI CUENTA */
 @media only screen and (max-width: 768px) {
   .formularioMiCuenta input {
-    width: 100%; } }
+    width: 100%; }
+  .formularioMiCuenta {
+    font-size: 120%; } }
 
 /* MIXIN */
 .mediosDePagoIndex {
@@ -197,5 +229,20 @@ h4 {
 /* MEDIA QUERYS RECIENTEMENTE LANZADOS */
 @media only screen and (max-width: 768px) {
   img {
-    width: 60%;
-    height: 60%; } }
+    width: 70%;
+    height: 70%; }
+  .table-responsive {
+    margin: 5%; } }
+
+/* MEDIA QUERYS FOOTER */
+@media only screen and (max-width: 768px) {
+  .mediosDePagoIndex {
+    margin: 5%; }
+  .redesSocialesIndex {
+    margin: 5%; } }
+
+@media only screen and (max-width: 320px) {
+  .mediosDePagoIndex {
+    margin: 8%; }
+  .redesSocialesIndex {
+    margin: 8%; } }
